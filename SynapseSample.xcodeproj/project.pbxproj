@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B259AAF91AD8075D002D1335 /* Synapse.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B259AAF71AD8075D002D1335 /* Synapse.bundle */; };
+		B259AAFA1AD8075D002D1335 /* Synapse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B259AAF81AD8075D002D1335 /* Synapse.framework */; };
+		B259AAFC1AD807D3002D1335 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B259AAFB1AD807D3002D1335 /* SystemConfiguration.framework */; };
+		B259AAFE1AD80857002D1335 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B259AAFD1AD80857002D1335 /* CoreLocation.framework */; };
+		B259AB001AD8085C002D1335 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B259AAFF1AD8085C002D1335 /* CoreBluetooth.framework */; };
+		B259AB021AD80861002D1335 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B259AB011AD80861002D1335 /* CoreGraphics.framework */; };
+		B259AB051AD81835002D1335 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B259AB041AD81835002D1335 /* ContentViewController.m */; };
 		B25C1BE51AD6D2E900AEBC8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B25C1BE41AD6D2E900AEBC8E /* main.m */; };
 		B25C1BE81AD6D2E900AEBC8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B25C1BE71AD6D2E900AEBC8E /* AppDelegate.m */; };
 		B25C1BEB1AD6D2E900AEBC8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25C1BEA1AD6D2E900AEBC8E /* ViewController.m */; };
 		B25C1BEE1AD6D2E900AEBC8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25C1BEC1AD6D2E900AEBC8E /* Main.storyboard */; };
 		B25C1BF01AD6D2E900AEBC8E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B25C1BEF1AD6D2E900AEBC8E /* Images.xcassets */; };
-		B25C1BF31AD6D2E900AEBC8E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25C1BF11AD6D2E900AEBC8E /* LaunchScreen.xib */; };
 		B25C1BFF1AD6D2E900AEBC8E /* SynapseSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B25C1BFE1AD6D2E900AEBC8E /* SynapseSampleTests.m */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +33,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B259AAF71AD8075D002D1335 /* Synapse.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Synapse.bundle; sourceTree = "<group>"; };
+		B259AAF81AD8075D002D1335 /* Synapse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Synapse.framework; sourceTree = "<group>"; };
+		B259AAFB1AD807D3002D1335 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B259AAFD1AD80857002D1335 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B259AAFF1AD8085C002D1335 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		B259AB011AD80861002D1335 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B259AB031AD81835002D1335 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		B259AB041AD81835002D1335 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 		B25C1BDF1AD6D2E900AEBC8E /* SynapseSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SynapseSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25C1BE31AD6D2E900AEBC8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B25C1BE41AD6D2E900AEBC8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,7 +50,6 @@
 		B25C1BEA1AD6D2E900AEBC8E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B25C1BED1AD6D2E900AEBC8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B25C1BEF1AD6D2E900AEBC8E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B25C1BF21AD6D2E900AEBC8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B25C1BF81AD6D2E900AEBC8E /* SynapseSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SynapseSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25C1BFD1AD6D2E900AEBC8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B25C1BFE1AD6D2E900AEBC8E /* SynapseSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynapseSampleTests.m; sourceTree = "<group>"; };
@@ -47,6 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B259AB021AD80861002D1335 /* CoreGraphics.framework in Frameworks */,
+				B259AB001AD8085C002D1335 /* CoreBluetooth.framework in Frameworks */,
+				B259AAFE1AD80857002D1335 /* CoreLocation.framework in Frameworks */,
+				B259AAFC1AD807D3002D1335 /* SystemConfiguration.framework in Frameworks */,
+				B259AAFA1AD8075D002D1335 /* Synapse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +81,10 @@
 		B25C1BD61AD6D2E900AEBC8E = {
 			isa = PBXGroup;
 			children = (
+				B259AB011AD80861002D1335 /* CoreGraphics.framework */,
+				B259AAFF1AD8085C002D1335 /* CoreBluetooth.framework */,
+				B259AAFD1AD80857002D1335 /* CoreLocation.framework */,
+				B259AAFB1AD807D3002D1335 /* SystemConfiguration.framework */,
 				B25C1BE11AD6D2E900AEBC8E /* SynapseSample */,
 				B25C1BFB1AD6D2E900AEBC8E /* SynapseSampleTests */,
 				B25C1BE01AD6D2E900AEBC8E /* Products */,
@@ -81,13 +103,16 @@
 		B25C1BE11AD6D2E900AEBC8E /* SynapseSample */ = {
 			isa = PBXGroup;
 			children = (
+				B259AAF71AD8075D002D1335 /* Synapse.bundle */,
+				B259AAF81AD8075D002D1335 /* Synapse.framework */,
 				B25C1BE61AD6D2E900AEBC8E /* AppDelegate.h */,
 				B25C1BE71AD6D2E900AEBC8E /* AppDelegate.m */,
+				B259AB031AD81835002D1335 /* ContentViewController.h */,
+				B259AB041AD81835002D1335 /* ContentViewController.m */,
 				B25C1BE91AD6D2E900AEBC8E /* ViewController.h */,
 				B25C1BEA1AD6D2E900AEBC8E /* ViewController.m */,
 				B25C1BEC1AD6D2E900AEBC8E /* Main.storyboard */,
 				B25C1BEF1AD6D2E900AEBC8E /* Images.xcassets */,
-				B25C1BF11AD6D2E900AEBC8E /* LaunchScreen.xib */,
 				B25C1BE21AD6D2E900AEBC8E /* Supporting Files */,
 			);
 			path = SynapseSample;
@@ -200,8 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B25C1BEE1AD6D2E900AEBC8E /* Main.storyboard in Resources */,
-				B25C1BF31AD6D2E900AEBC8E /* LaunchScreen.xib in Resources */,
 				B25C1BF01AD6D2E900AEBC8E /* Images.xcassets in Resources */,
+				B259AAF91AD8075D002D1335 /* Synapse.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B259AB051AD81835002D1335 /* ContentViewController.m in Sources */,
 				B25C1BEB1AD6D2E900AEBC8E /* ViewController.m in Sources */,
 				B25C1BE81AD6D2E900AEBC8E /* AppDelegate.m in Sources */,
 				B25C1BE51AD6D2E900AEBC8E /* main.m in Sources */,
@@ -250,14 +276,6 @@
 				B25C1BED1AD6D2E900AEBC8E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B25C1BF11AD6D2E900AEBC8E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B25C1BF21AD6D2E900AEBC8E /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -343,7 +361,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SynapseSample",
+				);
 				INFOPLIST_FILE = SynapseSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +377,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SynapseSample",
+				);
 				INFOPLIST_FILE = SynapseSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +442,7 @@
 				B25C1C041AD6D2E900AEBC8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B25C1C051AD6D2E900AEBC8E /* Build configuration list for PBXNativeTarget "SynapseSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +451,7 @@
 				B25C1C071AD6D2E900AEBC8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

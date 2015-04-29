@@ -37,7 +37,7 @@
     _radarStatus.hidden = YES;
     
     _content = @"__START__";
-    [self showNotificationWithTitle:@"Welcome" body:@"We hope you enjoy our application, for feedback please get in touch hello@synapse-manager.io" buttonTitle:@"Start radar"];
+    [self showNotificationWithTitle:@"Welcome" body:@"We hope you enjoy usin Synapse, for feedback and question please get in touch info@synapsemanager.io" buttonTitle:@"Start radar"];
 }
 
 - (void)viewDidAppear:(BOOL)animated

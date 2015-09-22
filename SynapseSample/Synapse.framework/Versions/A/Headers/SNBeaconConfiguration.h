@@ -16,6 +16,8 @@
 @property (nonatomic, strong) NSArray *regionMessages;
 /** The proximity UUID */
 @property (nonatomic, strong) NSString *uuid;
+/** A dictionary containing the user data from external service */
+@property (nonatomic, strong) NSDictionary *externalUserData;
 
 + (SNBeaconConfiguration*)configurationWithJSON:(NSDictionary*)json;
 

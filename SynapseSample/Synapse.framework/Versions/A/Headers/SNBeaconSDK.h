@@ -22,4 +22,5 @@
 #import "SNOpenQuestion.h"
 #import "SNClosedQuestion.h"
 #import "SNSurveyAnswer.h"
-#import "SNSurveyPlusAnswer.h"
+#import "SNQuizAnswer.h"
+#import "SNQuizStats.h"

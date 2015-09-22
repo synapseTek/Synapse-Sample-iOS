@@ -13,9 +13,9 @@
 #import "SNBeaconRadar.h"
 #import "SNBeaconConfiguration.h"
 #import "SNSurveyAnswer.h"
-#import "SNSurveyPlusAnswer.h"
 #import "SNRegionMessage.h"
 #import "SNBeaconDynamicRadar.h"
+#import "SNQuizAnswer.h"
 
 @class SNBeaconData;
 @class SNBeaconEvent;
@@ -90,6 +90,7 @@
 @property (nonatomic, strong) NSString *sandboxToken;
 @property (nonatomic, strong) NSString *deviceID;
 @property (nonatomic, strong) NSMutableSet *answeredSurveys;
+@property (nonatomic, strong) NSMutableSet *answeredQuiz;
 @property (nonatomic) BOOL leaveTimerRunning;
 @property (nonatomic, strong) NSTimer *leaveTimer;
 @property (nonatomic, strong) NSString *proximityUUID;
@@ -102,21 +103,33 @@
 - (void)removeAllEvents;
 
 - (void)clearSurveyAnswers;
+- (void)clearQuizAnswers;
 /** Checks wether a specific survey was answered or not. Please note that this value is *not* retained after your application is removed from memory. If you wish to have a persistent record you should keep track of the filled surveys manually
  @param surveyID the ID of the survey you wish to check */
 - (BOOL)isSurveyAnswered:(NSString *)surveyID;
-/** Sends the answers to simple survey.
+/** Checks wether a specific quiz was answered or not. Please note that this value is *not* retained after your application is removed from memory. If you wish to have a persistent record you should keep track of the filled quizs manually
+ @param quizID the ID of the quiz you wish to check */
+- (BOOL)isQuizAnswered:(NSString *)quizID;
+/** Sends the answers to a survey.
  It is mandatory to use this method in order to store the user's responses on the server and collect data.
  @param answer the answers to this survey (see GSSurveyAnswer)
  @param completion a block with no return value that takes two parameters: the answer you sent and wether it was sent successfully or not
  */
 - (void)answerSurvey:(SNSurveyAnswer *)answer completion: (void (^)(SNSurveyAnswer *answer, BOOL success))completion;
-/** Sends the answers to survey.
+
+/** Sends the answers to a quiz.
  It is mandatory to use this method in order to store the user's responses on the server and collect data.
- @param plusAnswer the answers to this survey (see GSSurveyPlusAnswer)
+ @param answer the answers to this quiz (see SNQuizAnswer)
  @param completion a block with no return value that takes two parameters: the answer you sent and wether it was sent successfully or not
  */
-- (void)answerSurveyPlus:(SNSurveyPlusAnswer *)plusAnswer completion:(void (^)(SNSurveyPlusAnswer *answer, BOOL success))completion;
+- (void)answerQuiz:(SNQuizAnswer *)answer completion: (void (^)(SNQuizAnswer *answer, BOOL success))completion;
+
+/** Get the stats about a quiz
+ @param quizID the identifier of the quiz
+ @param completion a block with no return value that takes two parameters: the array of stats (see SNQuizStats) and wether it was sent successfully or not
+ */
+- (void)getQuizStats:(NSString*)quizID completion:(void (^)(NSArray *stats, BOOL success))completion;
+
 /** Notifies the server that a push notification was opened. You should invoke this when a user enters your app from a remote notification in order to track it from your Dashboard.
  @param pushID the "push_id" string returned inside the APNS payload
  */

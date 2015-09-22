@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B259AAF91AD8075D002D1335 /* Synapse.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B259AAF71AD8075D002D1335 /* Synapse.bundle */; };
-		B259AAFA1AD8075D002D1335 /* Synapse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B259AAF81AD8075D002D1335 /* Synapse.framework */; };
+		0282835B1BB196E8001B3284 /* Synapse.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 028283591BB196E8001B3284 /* Synapse.bundle */; settings = {ASSET_TAGS = (); }; };
+		0282835C1BB196E8001B3284 /* Synapse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0282835A1BB196E8001B3284 /* Synapse.framework */; settings = {ASSET_TAGS = (); }; };
 		B259AAFC1AD807D3002D1335 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B259AAFB1AD807D3002D1335 /* SystemConfiguration.framework */; };
 		B259AAFE1AD80857002D1335 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B259AAFD1AD80857002D1335 /* CoreLocation.framework */; };
 		B259AB001AD8085C002D1335 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B259AAFF1AD8085C002D1335 /* CoreBluetooth.framework */; };
@@ -33,8 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B259AAF71AD8075D002D1335 /* Synapse.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Synapse.bundle; sourceTree = "<group>"; };
-		B259AAF81AD8075D002D1335 /* Synapse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Synapse.framework; sourceTree = "<group>"; };
+		028283591BB196E8001B3284 /* Synapse.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Synapse.bundle; sourceTree = "<group>"; };
+		0282835A1BB196E8001B3284 /* Synapse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Synapse.framework; sourceTree = "<group>"; };
 		B259AAFB1AD807D3002D1335 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B259AAFD1AD80857002D1335 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B259AAFF1AD8085C002D1335 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -61,10 +61,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B259AB021AD80861002D1335 /* CoreGraphics.framework in Frameworks */,
+				0282835C1BB196E8001B3284 /* Synapse.framework in Frameworks */,
 				B259AB001AD8085C002D1335 /* CoreBluetooth.framework in Frameworks */,
 				B259AAFE1AD80857002D1335 /* CoreLocation.framework in Frameworks */,
 				B259AAFC1AD807D3002D1335 /* SystemConfiguration.framework in Frameworks */,
-				B259AAFA1AD8075D002D1335 /* Synapse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,8 +103,8 @@
 		B25C1BE11AD6D2E900AEBC8E /* SynapseSample */ = {
 			isa = PBXGroup;
 			children = (
-				B259AAF71AD8075D002D1335 /* Synapse.bundle */,
-				B259AAF81AD8075D002D1335 /* Synapse.framework */,
+				028283591BB196E8001B3284 /* Synapse.bundle */,
+				0282835A1BB196E8001B3284 /* Synapse.framework */,
 				B25C1BE61AD6D2E900AEBC8E /* AppDelegate.h */,
 				B25C1BE71AD6D2E900AEBC8E /* AppDelegate.m */,
 				B259AB031AD81835002D1335 /* ContentViewController.h */,
@@ -226,7 +226,7 @@
 			files = (
 				B25C1BEE1AD6D2E900AEBC8E /* Main.storyboard in Resources */,
 				B25C1BF01AD6D2E900AEBC8E /* Images.xcassets in Resources */,
-				B259AAF91AD8075D002D1335 /* Synapse.bundle in Resources */,
+				0282835B1BB196E8001B3284 /* Synapse.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
